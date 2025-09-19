@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ruleta de Participantes</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Ruleta de Participantes</h1>
+    <div id="participantes">
+        <h2>Agregar Participantes</h2>
+        <input type="text" id="input-nombre" placeholder="Ingresa nombre">
+        <button id="agregar-participante">Agregar</button>
+        <ul id="nombres-container">
+            <!-- Aquí se mostrarán los nombres agregados -->
+        </ul>
+    </div>
+    <div id="ruleta-container">
+        <h2>Ruleta para Elegir Quién Inicia</h2>
+        <div id="flecha"></div>
+        <div id="ruleta">
+            <svg width="300" height="300" viewBox="0 0 300 300">
+                <!-- Segmentos de la ruleta se generarán aquí -->
+            </svg>
+        </div>
+        <button id="inicio">Iniciar</button>
+    </div>
+    <div id="puntos">
+        <h2>Puntos de Participantes</h2>
+        <div id="puntos-container">
+            <!-- Inputs para puntos -->
+        </div>
+    </div>
+    <button id="finalizar">Finalizar</button>
+    <div id="resultado">
+        <!-- Aquí se mostrará el ganador -->
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
